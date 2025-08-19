@@ -62,18 +62,16 @@ body{
 input[type=email],
 input[type=text],
 textarea{
-  margin-top: 10px;
   width: 100%;
   padding: 1rem;
-  margin-bottom: 10px;
   border-radius: 10px;
   border: none;
   border: 2px solid var(--Green-200);
 }
 label{
   text-transform: capitalize;
-  margin-bottom: 1rem;
   
+
 }
 
 .container-form .form-group:nth-child(1){
@@ -82,8 +80,7 @@ label{
     
 }
 .radio-input{
-  display: flex;
-  margin-top: 1rem;
+  display: flex;  margin-top: 10px;
   
 }
 .container-form .form-group:nth-child(3) .radio-input .radio-option{
@@ -93,16 +90,16 @@ label{
   outline: 1px solid var(--Grey-500);
   margin: 0 .5rem;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .contact-form h1{
   text-transform: capitalize;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: var(--Grey-900);
 }
 
 input[type=checkbox]{
-  margin-top: 20px;
+  margin-top: 10px;
   color: var(--Grey-900);
 }
 input:focus,
@@ -130,7 +127,7 @@ input[type=email].form-error{
 
 .submitBtn{
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: .7rem;
   text-transform: capitalize;
   border: none;
@@ -172,12 +169,34 @@ input[type=email].form-error{
   .container-form .form-group:nth-child(1){
     flex-direction: column;
   }
+  .container{
+    max-width: var(--width-Mobile);
+    height: 100vh;
+    width: 100%;
+   
+  }
+  .contact-form{
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    
+  }
+  ::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-thumb{
+    width: 5px;
+    height: 5px;
+  }
+  
   .container-form .form-group:nth-child(3) .radio-input {
     display: flex;
     flex-direction: column;
   }
   textarea{
-    height: 200px;
+    height: 100px;
   }
   .success-message{
     width: 95%;
