@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inconsolata:wdth,wght@50..200,200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+
+ <div class="container">
+    <form id="contact-form" class="contact-form">
+    
+      <h1>Contact us</h1>
+       <div class="container-form">
+      <div class="form-group ">
+        <div class="firstName">
+        <label for="firstName" >first name<span>*</span></label>
+        <input type="text" name="firstName" id="firstName" placeholder="e.g. mamadou s" >
+        <p class="form-alert">this is required</p>
+      </div>
+        <div class="lastName">
+        <label for="lastName">last name<span>*</span></label>
+        <input type="text" name="lastName" id="lastName" placeholder="e.g. leigh" >
+        <p class="form-alert">this is required</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">email<span>*</span></label>
+        <input type="email" name="email" id="email" placeholder="e.g. leigh@gmail.com" >
+        <p class="form-alert">this is required</p>
+      </div>
+      <div class="form-group ">
+        <label for="queryType">query type<span>*</span></label>
+        <div class="radio-input">
+        <div class="radio-option">
+          <input type="radio" name="queryType" id="queryType" value="generalEnguiry">
+        <label for="generalEnguiry">general Enguiry</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="queryType" id="queryType" value="support">
+        <label for="support">support request</label>
+        </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">message<span>*</span></label>
+        <textarea name="message" id="message" placeholder="e.g. I would like to know more about your services.">
+          
+        </textarea>
+        <p class="form-alert">this is required</p>
+      </div>
+      <div class="form-group" id="privacyPolicyGroup">
+        <input type="checkbox" name="privacyPolicy" id="privacyPolicy" >
+        <label for="privacyPolicy">I consent to being contacted by the team<span>*</span></label>
+        <p class="form-alert">to submit this form please concent to being contacted</p>
+      </div>
+      <button type="submit" id="submitBtn" class="submitBtn">Submit</button>
+      <div class="success-message" id="success-message">
+        <div class="message-header">
+          <img src="./assets/images/icon-success-check.svg" alt="">
+          message sent!!
+        </div>
+        <p>thanks for compliting the form. we'll be in touch soon!!</p>
+      </div>
+    </form>
+  </div>
+ </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
